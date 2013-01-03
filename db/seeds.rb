@@ -1,4 +1,15 @@
 Product.delete_all
+
+Product.create(:title => 'Programming Ruby 1.9',
+  :description =>
+    %{<p>
+        Ruby is the fastest growing and most exciting dynamic language
+        out there. If you need to get working programs delivered fast,
+        you should add Ruby to your toolbox.
+      </p>},
+  :image_url => 'http://covers.oreilly.com/images/9781934356081/lrg.jpg',
+  :price => 49.50)
+
 Product.create(:title => 'Web Design for Developers',
   :description => 
     %{<p>
@@ -13,15 +24,7 @@ Product.create(:title => 'Web Design for Developers',
   :image_url =>   "http://ecx.images-amazon.com/images/I/41p96KMPOuL._SL500_AA300_.jpg",    
   :price => 42.95)
 # . . .
-Product.create(:title => 'Programming Ruby 1.9',
-  :description =>
-    %{<p>
-        Ruby is the fastest growing and most exciting dynamic language
-        out there. If you need to get working programs delivered fast,
-        you should add Ruby to your toolbox.
-      </p>},
-  :image_url => 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqC6EBsC7J4SzeoIXL_lytRT4NwTu7rPC3sodvSg8DmME033Cr-Q',
-  :price => 49.50)
+
 # . . .
 
 Product.create(:title => 'Rails Test Prescriptions',
@@ -34,5 +37,5 @@ Product.create(:title => 'Rails Test Prescriptions',
         procedures for Rails 2 and Rails 3, and introduces popular add-ons,
         including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
       </p>},
-  :image_url => 'http://imagery.pragprog.com/products/189/nrtest.jpg?1298589928',
+  :image_url => 'http://i43.tower.com/images/mm116173066/rails-test-prescriptions-noel-rappin-ph-d-paperback-cover-art.jpg',
   :price => 43.75)
